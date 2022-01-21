@@ -1,0 +1,44 @@
+@use './variables/fonts';
+
+*, *::after, *::before{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: fonts.$fontFamily;
+  font-size: fonts.$fontRegular;
+}
+h1{
+  font-size: fonts.$fontHeaderOne;
+  line-height: 3.625rem;
+  letter-spacing: 2px;
+}
+h2{
+  font-size: fonts.$fontHeaderTwo;
+  line-height: 2.75rem;
+  letter-spacing: 1.5px;
+}
+h3{
+  font-size: fonts.$fontHeaderThree;
+  line-height: 2.25rem;
+  letter-spacing: 1.15px;
+}
+h4{
+  font-size: fonts.$fontHeaderFour;
+  line-height: 2.375rem;
+  letter-spacing: 2px;
+}
+h5{
+  font-size: fonts.$fontHeaderFive;
+  line-height: 2.0625rem;
+  letter-spacing: 1.7px;
+}
+h6{
+  font-size: fonts.$fontHeaderSix;
+  line-height: 1.5rem;
+  letter-spacing: 1.3px;
+}
+h1, h2, h3, h4, h5, h6{
+  text-transform: uppercase;
+}

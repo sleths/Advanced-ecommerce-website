@@ -1,0 +1,15 @@
+@use "../../styles/variables/color";
+
+.header{
+  background-color: color.$mainBlack;
+  padding: 1em 0;
+}
+
+.container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: 0 auto;
+  max-width: 1100px;
+}
