@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700&display=swap');
 
+// desktop font sizes
 $fontFamily: ‘Manrope’, sans-serif;
 $fontHeaderOne: 3.5rem;
 $fontHeaderTwo: 2.5rem;
@@ -10,3 +11,11 @@ $fontHeaderSix: 1.125rem;
 $fontOverline: 0.875rem;
 $fontSubtitle: 0.8125rem;
 $fontRegular: 0.9375rem;
+
+// mobile font sizes
+$fontMobileHeaderOne: 2.25rem;
+$fontMobileHeaderTwo: 1.75rem;
+$fontMobileHeaderThree: 1.5rem;
+$fontMobileHeaderFour: 1.125rem;
+$fontMobileHeaderFive: 0.985rem;
+$fontMobileHeaderSix: 0.850rem;
