@@ -1,4 +1,5 @@
 @use './variables/fonts';
+@use './variables/color';
 
 *, *::after, *::before{
   padding: 0;
@@ -40,6 +41,19 @@ h6{
   letter-spacing: 1.3px;
 }
 h1, h2, h3, h4, h5, h6{
+  text-transform: uppercase;
+}
+
+p{
+  color: color.$darkGray;
+  line-height: 1.5625rem;
+  font-size: fonts.$fontRegular;
+}
+
+.overline{
+  font-size: fonts.$fontOverline;
+  line-height: 1.1875rem;
+  letter-spacing: 0.625rem;
   text-transform: uppercase;
 }
 
