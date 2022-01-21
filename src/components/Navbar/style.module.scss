@@ -1,8 +1,10 @@
 @use "../../styles/variables/color";
 
 .header{
-  background-color: color.$mainBlack;
-  padding: 1em 0;
+  padding: 2em 0;
+  position: absolute;
+  width: 100%;
+  border-bottom: 1px solid rgba(151, 151, 151, 0.50);
 }
 
 .container{
