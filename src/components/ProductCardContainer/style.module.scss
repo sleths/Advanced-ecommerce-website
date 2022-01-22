@@ -1,7 +1,21 @@
+@use "../../styles/variables/color";
+
 .container {
-  width: 90%;
   margin: 0 auto;
   flex-direction: column;
   gap: 3em;
-  margin-top: 3em;
+  padding: 3em 0;
+  background-color: color.$mainWhite;
+  max-width: 1100px;
+}
+
+.containerOnNav {
+  position: relative;
+  z-index: 2;
+}
+
+@media(min-width: 768px){
+  .container {
+    flex-direction: row;
+  }
 }

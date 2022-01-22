@@ -1,10 +1,17 @@
 @use "../../styles/variables/color";
 
+.overlay {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.35);
+  position: fixed;
+  pointer-events: none;
+  z-index: 0;
+}
+
 .header{
-  padding: 2em 0;
   position: absolute;
   width: 100%;
-  border-bottom: 1px solid rgba(151, 151, 151, 0.50);
 }
 
 .container{
@@ -14,4 +21,8 @@
   width: 90%;
   margin: 0 auto;
   max-width: 1100px;
+  padding: 2em 0;
+  border-bottom: 1px solid rgba(151, 151, 151, 0.50);
+  z-index: 1;
+  position: relative;
 }
