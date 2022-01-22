@@ -5,6 +5,7 @@
   display: flex;
   flex-direction: column;
   margin: 0 auto;
+  gap: 2em;
 }
 
 .orangeSpeaker{
@@ -14,13 +15,63 @@
   text-align: center;
   padding: 3em 2em;
   gap: 1.5em;
+  &::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-image: url("../../assets/home/desktop/pattern-circles.svg");
+    position: absolute;
+    background-position: top;
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
 }
 
 .orangeSpeaker img {
-  width: 50%;
+  width: 40%;
 }
 
 .orangeSpeaker h1 {
   max-width: 240px;
   color: color.$mainWhite;
 }
+
+.graySpeaker {
+  border-radius: 8px;
+  flex-direction: column;
+  align-items: start;
+  background-image: url("../../assets/home/mobile/image-speaker-zx7.jpg");
+  height: 320px;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 4em 1em;
+}
+
+.graySpeaker h1, .grayEarphones h1 {
+  font-size: 28px;
+}
+
+.earPhones {
+  border-radius: 8px;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5em;
+}
+
+.earPhones img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.grayEarphones {
+  width: 100%;
+  border-radius: 8px;
+  background-color: color.$darkGray;
+  padding: 3em 1em;
+  & h1 {
+    margin-bottom: 0.5em;
+  }
+}
+
+
