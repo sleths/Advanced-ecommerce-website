@@ -4,6 +4,7 @@ import Hero from "./components/Hero"
 import ProductCardContainer from "./components/ProductCardContainer";
 import HomeAdComponent from "./components/HomeAdComponent";
 import SharedArticleComponent from "./components/SharedArticleComponent";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <ProductCardContainer />
       <HomeAdComponent />
       <SharedArticleComponent />
+      <Footer />
     </div>
   );
 }

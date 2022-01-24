@@ -1,0 +1,50 @@
+@use "../../styles/variables/color";
+
+.footerContainer {
+  background-color: black;
+}
+
+.container {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 2.5em 1em;
+  text-align: center;
+  color: color.$mainWhite;
+  gap: 2em;
+  & h2 {
+    text-transform: lowercase;
+  }
+  & p {
+    color: #979797;
+    font-weight: bold;
+  }
+  & .footerText {
+    color: #979797;
+    line-height: 22px;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.icons {
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+  gap: 1em;
+
+  & svg {
+    font-size: 26px;
+  }
+}
+
