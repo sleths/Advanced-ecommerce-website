@@ -24,3 +24,27 @@
   object-fit: cover;
 }
 
+.tabletImg {
+  display: none;
+}
+
+@media(min-width:768px) {
+  .mobileImg {
+    display: none;
+  }
+  .tabletImg {
+    display: block;
+  }
+  .container img {
+    margin-top: 2em;
+  }
+  .textContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 600px;
+    gap: 2em;
+  }
+}
+
