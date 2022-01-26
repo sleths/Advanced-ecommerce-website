@@ -2,6 +2,18 @@
 
 .footerContainer {
   background-color: black;
+  position: relative;
+}
+
+.footerContainer::after {
+  content: "";
+  width: 100px;
+  height: 4px;
+  background-color: color.$mainOrange;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .container {
