@@ -3,18 +3,14 @@
 .container {
   width: 90%;
   display: flex;
-  flex-direction: column;
   margin: 0 auto;
-  gap: 2em;
 }
 
 .orangeSpeaker {
-  flex-direction: column;
   background-color: color.$mainOrange;
   border-radius: 8px;
   text-align: center;
   padding: 3em 2em;
-  gap: 1.5em;
   &::before {
     content: "";
     width: 100%;
@@ -24,6 +20,9 @@
     background-position: top;
     background-size: 100%;
     background-repeat: no-repeat;
+  }
+  & p{
+    max-width: 350px;
   }
 }
 
@@ -38,7 +37,6 @@
 
 .graySpeaker {
   border-radius: 8px;
-  flex-direction: column;
   align-items: start;
   background-image: url("../../assets/home/mobile/image-speaker-zx7.jpg");
   height: 320px;
@@ -69,9 +67,55 @@
   border-radius: 8px;
   background-color: color.$darkGray;
   padding: 3em 1em;
-  & h1 {
-    margin-bottom: 0.5em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.container, .orangeSpeaker, .graySpeaker, .textContainer {
+  flex-direction: column;
+  gap: 1.5em;
+}
+
+.tabletImg, .textContainer {
+  position: relative;
+  z-index: 2;
+}
+
+.tabletImg, .earphoneTabletImg{
+  display: none;
+}
+
+@media(min-width: 768px){
+  .orangeSpeaker {
+    &::before{
+      background-position: center -170px;
+    }
+    & .mobileImg {
+      display: none;
+    }
+    & .tabletImg {
+      display: block;
+      width: 150px;
   }
 }
 
+.graySpeaker {
+  background-image: url("../../assets/home/tablet/image-speaker-zx7.jpg");
+  padding: 4em 3em;
+}
 
+.earPhones {
+  flex-direction: row;
+  align-items: stretch;
+  & .grayEarphones, .earphoneTabletImg {
+    width: 50%;
+  }
+  & .earphoneMobileImg {
+    display: none;
+  }
+  & .earphoneTabletImg {
+    display: block;
+  }
+}
+}

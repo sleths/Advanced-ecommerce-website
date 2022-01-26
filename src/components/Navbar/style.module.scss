@@ -29,3 +29,13 @@
     cursor: pointer;
   }
 }
+
+//Tablet 
+@media(min-width: 768px){
+  .container {
+    & img:nth-child(2){
+      margin-left: 2em;
+      margin-right: auto;
+    }
+  }
+}

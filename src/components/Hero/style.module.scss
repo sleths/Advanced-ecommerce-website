@@ -10,8 +10,17 @@
   text-align: center;
   padding: 0 1em;
   gap: 1em;
+  & p{
+    max-width: 350px;
+  }
 }
 
 .heading{
   color: color.$mainWhite;
+}
+
+@media(min-width: 768px){
+  .container {
+    background-image: url(../../assets/home/tablet/image-header.jpg);
+  }
 }

@@ -5,7 +5,7 @@ const ProductCard = ({src, alt, title, link}) => {
   return (
     <section className={`${styles.container} centered`}>
       <img src={src} alt={alt} />
-      <h5>{title}</h5>
+      <h6>{title}</h6>
       <div className={styles.btnContainer}>
       <a href={link}>Shop</a>
       <img src={arrowRight} alt="Click for seeing" />
