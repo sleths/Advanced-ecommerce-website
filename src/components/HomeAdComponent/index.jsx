@@ -3,6 +3,7 @@ import orangeSpeakerImg from "../../assets/home/mobile/image-speaker-zx9.png";
 import orangeTabletImg from "../../assets/home/tablet/image-speaker-zx9.png";
 import earPhoneMobileImg from "../../assets/home/mobile/image-earphones-yx1.jpg";
 import earPhoneTabletImg from "../../assets/home/tablet/image-earphones-yx1.jpg";
+import earPhoneDesktopImg from "../../assets/home/desktop/image-earphones-yx1.jpg";
 import SeeProductBtn from "../SeeProductBtn";
 
 const HomeAdComponent = () => {
@@ -26,6 +27,7 @@ const HomeAdComponent = () => {
       <div className={`${styles.earPhones} centered`}>
         <img src={earPhoneMobileImg} alt="Earphones" className={styles.earphoneMobileImg}/>
         <img src={earPhoneTabletImg} alt="Earphones" className={styles.earphoneTabletImg}/>
+        <img src={earPhoneDesktopImg} alt="Earphones" className={styles.earphoneDesktopImg}/>
       <div className={`${styles.grayEarphones}`}>
       <h1>YX1 earphones</h1>
       <SeeProductBtn link="" type="bordered" />
