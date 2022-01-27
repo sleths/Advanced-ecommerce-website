@@ -10,17 +10,19 @@ const Footer = () => {
 <section className={styles.container}>
   <h2>Audiophile</h2>
   <div className={styles.navbar}>
-    <a href=""><h6>Home</h6></a>
-    <a href=""><h6>Headphones</h6></a>
-    <a href=""><h6>Speakers</h6></a>
-    <a href=""><h6>Earphones</h6></a>
+    <a href="">Home</a>
+    <a href="">Headphones</a>
+    <a href="">Speakers</a>
+    <a href="">Earphones</a>
   </div>
   <article className={styles.footerText}>Audiophile is an all in one stop to fulfill your audio needs. We're a small team of music lovers and sound specialists who are devoted to helping you get the most out of personal audio. Come and visit our demo facility - we’re open 7 days a week.</article>
+  <div className={styles.footerSubtext}>
   <p>Copyright {date.getFullYear()}. All Rights Reserved</p>
   <div className={styles.icons}>
   <FaFacebookSquare />
   <FaTwitter />
   <FaInstagram />
+  </div>
   </div>
 </section>
 </footer>
