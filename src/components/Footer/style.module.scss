@@ -45,6 +45,10 @@ a {
   letter-spacing: 2px;
   font-size: 13px;
   font-weight: 500;
+  transition: 0.25s color ease-in;
+  &:hover {
+    color: color.$mainOrange;
+  }
 }
 
 .navbar {
@@ -61,6 +65,11 @@ a {
 justify-content: center;
   & svg {
     font-size: 26px;
+    transition: 0.25s color ease-in;
+    cursor: pointer;
+  &:hover {
+    color: color.$mainOrange;
+  }
   }
 }
 
