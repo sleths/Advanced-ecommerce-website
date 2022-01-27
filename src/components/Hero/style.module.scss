@@ -24,3 +24,9 @@
     background-image: url(../../assets/home/tablet/image-header.jpg);
   }
 }
+
+@media(min-width: 1440px){
+  .container {
+    background-image: url(../../assets/home/desktop/image-hero.jpg);
+  }
+}

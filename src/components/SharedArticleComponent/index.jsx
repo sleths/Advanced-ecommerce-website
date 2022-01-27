@@ -1,12 +1,14 @@
 import styles from "./style.module.scss";
 import headphoneModelMobileImg from "../../assets/shared/mobile/image-best-gear.jpg";
 import headphoneModelTabletImg from "../../assets/shared/tablet/image-best-gear.jpg";
+import headphoneModelDesktopImg from "../../assets/shared/desktop/image-best-gear.jpg";
 
 const SharedArticleComponent = () => {
   return (
     <section className={styles.container}>
       <img src={headphoneModelMobileImg} alt="Model with headphones" className={styles.mobileImg}/>
       <img src={headphoneModelTabletImg} alt="Model with headphones" className={styles.tabletImg}/>
+      <img src={headphoneModelDesktopImg} alt="Model with headphones" className={styles.desktopImg}/>
       <div className={styles.textContainer}>
       <h2>Bringing you the <span>best</span> audio gear</h2>
       <article>
