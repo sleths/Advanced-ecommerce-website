@@ -14,6 +14,10 @@
   width: 100%;
 }
 
+.list {
+  display: none;
+}
+
 .container{
   display: flex;
   justify-content: space-between;
@@ -30,12 +34,28 @@
   }
 }
 
-//Tablet 
 @media(min-width: 768px){
   .container {
     & img:nth-child(2){
       margin-left: 2em;
       margin-right: auto;
     }
+  }
+}
+
+@media(min-width: 1440px) {
+  .container {
+    & img:first-of-type{
+      display: none;
+    }
+
+    & img:nth-child(2){
+      margin: 0;
+    }
+  }
+
+  .list {
+    display: flex;
+    gap: 2em;
   }
 }
