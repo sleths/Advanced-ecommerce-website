@@ -8,6 +8,7 @@ const Footer = () => {
   return (
 <footer className={styles.footerContainer}>
 <section className={styles.container}>
+  <div className={styles.navbarContainer}>
   <h2>Audiophile</h2>
   <div className={styles.navbar}>
     <a href="">Home</a>
@@ -15,9 +16,10 @@ const Footer = () => {
     <a href="">Speakers</a>
     <a href="">Earphones</a>
   </div>
+  </div>
   <article className={styles.footerText}>Audiophile is an all in one stop to fulfill your audio needs. We're a small team of music lovers and sound specialists who are devoted to helping you get the most out of personal audio. Come and visit our demo facility - we’re open 7 days a week.</article>
   <div className={styles.footerSubtext}>
-  <p>Copyright {date.getFullYear()}. All Rights Reserved</p>
+  <p>Copyright &#169; {date.getFullYear()} Sera Zenginler. All Rights Reserved. </p>
   <div className={styles.icons}>
   <FaFacebookSquare />
   <FaTwitter />

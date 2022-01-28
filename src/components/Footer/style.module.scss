@@ -96,3 +96,29 @@ justify-content: center;
     justify-content: space-between;
   }
 }
+
+@media(min-width:1440px) {
+  .container {
+    &::after{
+      top: -2em;
+    }
+  }
+  .footerContainer {
+    padding: 2em 2em;
+  }
+  .navbarContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .navbar {
+    margin: 1em 0;
+  }
+  .footerText {
+    max-width: 540px;
+    padding-bottom: 2em;
+  }
+  .icons {
+    margin: -4em 0;
+  }
+}
