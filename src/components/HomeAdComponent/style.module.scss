@@ -12,6 +12,7 @@
   border-radius: 8px;
   text-align: center;
   padding: 3em 2em;
+  overflow: hidden;
   &::before {
     content: "";
     width: 100%;
@@ -83,7 +84,7 @@
   z-index: 2;
 }
 
-.tabletImg, .earphoneTabletImg, .earphoneDesktopImg{
+.tabletImg, .desktopImg, .earphoneTabletImg, .earphoneDesktopImg{
   display: none;
 }
 
@@ -104,6 +105,8 @@
 .graySpeaker {
   background-image: url("../../assets/home/tablet/image-speaker-zx7.jpg");
   padding: 4em 3em;
+  position: relative;
+  z-index: 2;
 }
 
 .earPhones {
@@ -122,6 +125,32 @@
 }
 
 @media(min-width: 1440px) {
+  .orangeSpeaker {
+    flex-direction: row;
+    padding: 8em 4em;
+
+    &::before {
+      background-position: 120px 70px;
+      background-size: contain;
+    }
+
+    & .tabletImg, .mobileImg {
+      display: none;
+    }
+    & .desktopImg {
+      display: block;
+      position: relative;
+      z-index: 2;
+      width: 30%;
+      margin-bottom: -12em;
+      margin-right: 5em;
+    }
+  }
+
+  .graySpeaker {
+    background-image: url("../../assets/home/desktop/image-speaker-zx7.jpg");
+  }
+
   .earPhones {
     flex-direction: row;
     justify-content: space-between;

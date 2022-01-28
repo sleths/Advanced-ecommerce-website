@@ -1,6 +1,7 @@
 import styles from "./style.module.scss";
 import orangeSpeakerImg from "../../assets/home/mobile/image-speaker-zx9.png";
 import orangeTabletImg from "../../assets/home/tablet/image-speaker-zx9.png";
+import orangeDesktopImg from "../../assets/home/desktop/image-speaker-zx9.png";
 import earPhoneMobileImg from "../../assets/home/mobile/image-earphones-yx1.jpg";
 import earPhoneTabletImg from "../../assets/home/tablet/image-earphones-yx1.jpg";
 import earPhoneDesktopImg from "../../assets/home/desktop/image-earphones-yx1.jpg";
@@ -12,6 +13,7 @@ const HomeAdComponent = () => {
       <div className={`${styles.orangeSpeaker} centered`}>
         <img src={orangeSpeakerImg} alt="Orange speaker" className={styles.mobileImg}/>
         <img src={orangeTabletImg} alt="Orange speaker" className={styles.tabletImg}/>
+        <img src={orangeDesktopImg} alt="Orange speaker" className={styles.desktopImg}/>
       <div className={`${styles.textContainer} centered`}>        
         <h1>ZX9 speaker</h1>
         <p>Upgrade to premium speakers that are phenomenally built to deliver truly remarkable sound.</p>
