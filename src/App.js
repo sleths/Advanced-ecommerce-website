@@ -1,18 +1,16 @@
-import {useState} from "react"
 import Navbar from "./components/Navbar"
-import Hero from "./components/Hero"
-import ProductCardContainer from "./components/ProductCardContainer";
-import HomeAdComponent from "./components/HomeAdComponent";
 import SharedArticleComponent from "./components/SharedArticleComponent";
 import Footer from "./components/Footer";
+import { Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
 
 function App() {
   return (
     <div>
       <Navbar />
-      <Hero />
-      <ProductCardContainer />
-      <HomeAdComponent />
+      <Routes>
+        <Route path="/" element={<Home/>}/>
+      </Routes>
       <SharedArticleComponent />
       <Footer />
     </div>
