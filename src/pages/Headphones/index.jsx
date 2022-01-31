@@ -1,4 +1,5 @@
 import ProductHero from "../../components/ProductHero";
+import { headphones } from "../../utils/constants";
 
 const Headphones = () => {
   return (
