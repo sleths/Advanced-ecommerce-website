@@ -4,11 +4,11 @@ import HomeAdComponent from "../../components/HomeAdComponent";
 
 const Home = () => {
   return (
-    <>
+    <main>
     <Hero />
     <ProductCardContainer />
     <HomeAdComponent />
-    </>
+    </main>
   );
 };
 
