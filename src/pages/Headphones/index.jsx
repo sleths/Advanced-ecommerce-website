@@ -1,6 +1,10 @@
 const Headphones = () => {
   return (
-   <div>hi</div>
+<div>
+<section className="container">
+
+</section>
+</div>
   );
 };
 

@@ -1,0 +1,11 @@
+@use "../../styles/variables/color";
+
+.hero {
+  min-height: 30vh;
+  padding-top: 4em;
+}
+
+.heroContainer {
+  background-color: color.$mainBlack;
+  color: color.$mainWhite;
+}

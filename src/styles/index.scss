@@ -106,6 +106,12 @@ p{
   text-transform: uppercase;
 }
 
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
 @media(min-width: 768px){
   h1 {font-size: fonts.$fontHeaderOne;}
   h2 {font-size: fonts.$fontHeaderTwo;}
@@ -114,3 +120,4 @@ p{
   h5 {font-size: fonts.$fontHeaderFive;}
   h6 {font-size: fonts.$fontHeaderSix;}
 }
+
