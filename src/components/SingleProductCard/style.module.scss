@@ -11,8 +11,25 @@
   & p:last-of-type{
     color: color.$mainBlack;
     opacity: 0.5;
+    max-width: 572px;
   }
 }
 .section img{
   width: 100%;
   border-radius: 8px;}
+
+  @media(min-width: 768px) {
+    .section {
+      gap: 2em;
+    & img {
+      margin-top: 2em;
+    }
+    }
+  }
+
+  @media(min-width: 1440px) {
+    .section:first-of-type {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }

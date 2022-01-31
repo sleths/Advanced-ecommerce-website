@@ -6,7 +6,7 @@ const Headphones = () => {
   return (
 <>
 <ProductHero title="Headphones"/>
-<SingleProductCard />
+{headphones.map((product) => ( <SingleProductCard title={product.name} src={product.image.mobile} description={product.description}/>))}
 </>
   );
 };

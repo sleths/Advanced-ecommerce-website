@@ -9,3 +9,10 @@
   background-color: color.$mainBlack;
   color: color.$mainWhite;
 }
+
+@media(min-width: 768px){
+  .hero {
+    padding-top: 9em;
+    padding-bottom: 3em;
+  }
+}
