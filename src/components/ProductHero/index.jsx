@@ -1,10 +1,10 @@
 import styles from "./style.module.scss";
 
-const ProductHero = () => {
+const ProductHero = ({title}) => {
   return (
     <div className={styles.heroContainer}>
       <section className={`container centered ${styles.hero}`}>
-        <h1>Headphones</h1>
+        <h1>{title}</h1>
       </section>
     </div>
   );

@@ -1,10 +1,10 @@
+import ProductHero from "../../components/ProductHero";
+
 const Headphones = () => {
   return (
-<div>
-<section className="container">
-
-</section>
-</div>
+<>
+<ProductHero title="Headphones"/>
+</>
   );
 };
 
