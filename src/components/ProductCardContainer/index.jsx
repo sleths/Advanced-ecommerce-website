@@ -4,7 +4,7 @@ import speakerImg from "../../assets/shared/desktop/image-category-thumbnail-spe
 import earphoneImg from "../../assets/shared/desktop/image-category-thumbnail-earphones.png";
 import styles from "./style.module.scss";
 
-const ProductCardContainer = ({isOnNav}) => {
+const ProductCardContainer = ({isOnNav, isOnEveryPage}) => {
   const productData = [
     {
       src: headphoneImg,
@@ -26,7 +26,8 @@ const ProductCardContainer = ({isOnNav}) => {
     },
   ];
   return (
-    <section className={isOnNav ? `${styles.container} ${styles.containerOnNav} centered` : `${styles.container} centered`}>
+    <section className={isOnNav ? `${styles.container} ${styles.containerOnNav} centered` : 
+    isOnEveryPage ? `${styles.isOnEveryPage} ${styles.container} centered` : `${styles.container} centered`}>
       {productData.map((product) => (
         <ProductCard
           src={product.src}

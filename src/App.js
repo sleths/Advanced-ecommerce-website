@@ -6,6 +6,7 @@ import Home from "./pages/Home";
 import Headphones from "./pages/Headphones";
 import Speakers from "./pages/Speakers";
 import Earphones from "./pages/Earphones";
+import ProductCardContainer from "./components/ProductCardContainer";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path="/speakers" element={<Speakers/>}></Route>
         <Route path="/earphones" element={<Earphones/>}></Route>
       </Routes>
+      <ProductCardContainer isOnEveryPage/>
       <SharedArticleComponent />
       <Footer />
     </div>
