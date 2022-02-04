@@ -121,3 +121,9 @@ p{
   h6 {font-size: fonts.$fontHeaderSix;}
 }
 
+@media(min-width: 1440px) {
+  .product-page-container section:nth-child(even){
+    flex-direction: row-reverse;
+  }
+}
+

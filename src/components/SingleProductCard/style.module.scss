@@ -28,8 +28,18 @@
   }
 
   @media(min-width: 1440px) {
-    .section:first-of-type {
+    section.section{
       flex-direction: row;
       justify-content: space-between;
+      margin: 3em auto;
+      & img{
+        width: 40%;
+      }
+    }
+
+    div.section {
+      width: 40%;
+      text-align: left;
+      align-items: flex-start;
     }
   }
