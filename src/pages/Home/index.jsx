@@ -4,7 +4,7 @@ import HomeAdComponent from "../../components/HomeAdComponent";
 
 const Home = () => {
   return (
-    <main>
+    <main className="hideIsOnEveryPage">
     <Hero />
     <ProductCardContainer />
     <HomeAdComponent />

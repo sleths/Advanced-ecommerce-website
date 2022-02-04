@@ -112,6 +112,10 @@ p{
   margin: 0 auto;
 }
 
+.hideIsOnEveryPage + section {
+  display: none;
+}
+
 @media(min-width: 768px){
   h1 {font-size: fonts.$fontHeaderOne;}
   h2 {font-size: fonts.$fontHeaderTwo;}
