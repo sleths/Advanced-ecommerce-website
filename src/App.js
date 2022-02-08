@@ -14,9 +14,10 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Home/>}/>
-        <Route path="/headphones" element={<Headphones/>}></Route>
-        <Route path="/speakers" element={<Speakers/>}></Route>
-        <Route path="/earphones" element={<Earphones/>}></Route>
+        <Route path="/headphones" element={<Headphones/>}/>
+        <Route path="/speakers" element={<Speakers/>}/>
+        <Route path="/earphones" element={<Earphones/>}/>
+        <Route path="/product/id" element={<Earphones/>}/>
       </Routes>
       <ProductCardContainer isOnEveryPage/>
       <SharedArticleComponent />
