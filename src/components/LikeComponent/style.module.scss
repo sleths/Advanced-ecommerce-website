@@ -1,0 +1,45 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 4em;
+  width: 100%;
+}
+
+.card img {
+  width: 100%;
+}
+
+.title {
+  text-align: center;
+  font-size: 1.25rem;
+  margin-top: 2em;
+}
+
+@media (min-width: 768px) {
+  .card img {
+    width: 250px !important;
+  }
+  .card {
+    justify-content: space-between;
+  }
+
+  .wrapper {
+    display: flex;
+    gap: 2em;
+    justify-content: space-between;
+
+  }
+
+  }
+
+  @media (min-width: 1440px) {
+    .title {
+      margin-bottom: 2em;
+    }
+    .card img {
+      width: 300px !important;
+    }
+  }
