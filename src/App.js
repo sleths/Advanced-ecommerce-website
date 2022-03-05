@@ -7,8 +7,8 @@ import Headphones from "./pages/Headphones";
 import Speakers from "./pages/Speakers";
 import Earphones from "./pages/Earphones";
 import ProductCardContainer from "./components/ProductCardContainer";
-import ProductPageLayout from "./components/ProductPageLayout";
 import { useLocation } from "react-router-dom";
+import Product from "./pages/Product";
 
 function App() {
   const location = useLocation();
@@ -20,7 +20,7 @@ function App() {
         <Route path="/headphones" element={<Headphones/>}/>
         <Route path="/speakers" element={<Speakers/>}/>
         <Route path="/earphones" element={<Earphones/>}/>
-        <Route path="/product/:id" element={<ProductPageLayout/>}/>
+        <Route path="/product/:id" element={<Product/>}/>
       </Routes>
       <ProductCardContainer isOnEveryPage/>
       <SharedArticleComponent />
