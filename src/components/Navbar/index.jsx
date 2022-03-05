@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 
 import styles from "./style.module.scss";
 
-const Navbar = () => {
+const Navbar = ({isOnProductPage}) => {
   const [isNavOpen, setIsNavOpen] = useState(false);
   const handleClick = () => setIsNavOpen((prev) => !prev);
   const navLinks = [
@@ -30,7 +30,7 @@ const Navbar = () => {
   ];
   return (
     <>
-      <header className={styles.header}>
+      <header className={isOnProductPage ? `${styles.header} ${styles.product}` : styles.header}>
         <nav className={styles.container}>
           <img
             src={hmbrgIcon}

@@ -8,11 +8,13 @@ import Speakers from "./pages/Speakers";
 import Earphones from "./pages/Earphones";
 import ProductCardContainer from "./components/ProductCardContainer";
 import ProductPageLayout from "./components/ProductPageLayout";
+import { useLocation } from "react-router-dom";
 
 function App() {
+  const location = useLocation();
   return (
     <div>
-      <Navbar />
+      <Navbar isOnProductPage={location.pathname.includes("product")} />
       <Routes>
         <Route path="/" element={<Home/>}/>
         <Route path="/headphones" element={<Headphones/>}/>
