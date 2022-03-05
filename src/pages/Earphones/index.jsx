@@ -1,7 +1,6 @@
 import ProductHero from "../../components/ProductHero";
 import SingleProductCard from "../../components/SingleProductCard";
 import { earphones } from "../../utils/constants";
-import LikeComponent from "../../components/LikeComponent";
 
 const Earphones = () => {
   return (
@@ -18,7 +17,6 @@ const Earphones = () => {
       ))}
 
     </main>
-    <LikeComponent />
     </>
 );
 };

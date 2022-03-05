@@ -7,6 +7,7 @@ import Headphones from "./pages/Headphones";
 import Speakers from "./pages/Speakers";
 import Earphones from "./pages/Earphones";
 import ProductCardContainer from "./components/ProductCardContainer";
+import ProductPageLayout from "./components/ProductPageLayout";
 
 function App() {
   return (
@@ -17,7 +18,7 @@ function App() {
         <Route path="/headphones" element={<Headphones/>}/>
         <Route path="/speakers" element={<Speakers/>}/>
         <Route path="/earphones" element={<Earphones/>}/>
-        <Route path="/product/id" element={<Earphones/>}/>
+        <Route path="/product/:id" element={<ProductPageLayout/>}/>
       </Routes>
       <ProductCardContainer isOnEveryPage/>
       <SharedArticleComponent />
