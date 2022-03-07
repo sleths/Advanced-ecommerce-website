@@ -17,10 +17,10 @@ function App() {
       <Navbar isOnProductPage={location.pathname.includes("product")} />
       <Routes>
         <Route path="/" element={<Home/>}/>
-        <Route path="/headphones" element={<Headphones/>}/>
-        <Route path="/speakers" element={<Speakers/>}/>
-        <Route path="/earphones" element={<Earphones/>}/>
-        <Route path="/product/:id" element={<Product/>}/>
+        <Route path="headphones" element={<Headphones/>}/>
+        <Route path="speakers" element={<Speakers/>}/>
+        <Route path="earphones" element={<Earphones/>}/>
+        <Route path="product/:id" element={<Product/>}/>
       </Routes>
       <ProductCardContainer isOnEveryPage/>
       <SharedArticleComponent />
