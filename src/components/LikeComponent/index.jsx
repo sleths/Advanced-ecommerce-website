@@ -15,20 +15,20 @@ const LikeComponent = () => {
           <div className={styles.card}>
             <img src={data[randomIndex].image.desktop} alt={data[randomIndex].name} />
             <h3>{data[randomIndex].name}</h3>
-            <SeeProductBtn type="orange" />
+            <SeeProductBtn link={`/product/${data[randomIndex].id}`} type="orange" />
           </div>
           <div className={styles.card}>
             {randomIndex !== 0 ? (
               <>
                 <img src={data[randomIndex - 1].image.desktop} alt={data[randomIndex-1].name} />
                 <h4>{data[randomIndex - 1].name}</h4>
-                <SeeProductBtn type="orange" />
+                <SeeProductBtn link={`/product/${data[randomIndex - 1].id}`}type="orange" />
               </>
             ) : (
               <>
                 <img src={data[randomIndex + 2].image.desktop} alt={data[randomIndex+2].name} />
                 <h4>{data[randomIndex + 2].name}</h4>
-                <SeeProductBtn type="orange" />
+                <SeeProductBtn link={`/product/${data[randomIndex + 2].id}`} type="orange" />
               </>
             )}
           </div>
@@ -37,13 +37,13 @@ const LikeComponent = () => {
               <>
               <img src={data[randomIndex + 1].image.desktop} alt={data[randomIndex+1].name} />
                 <h4>{data[randomIndex + 1].name}</h4>
-                <SeeProductBtn type="orange" />
+                <SeeProductBtn link={`/product/${data[randomIndex + 1].id}`} type="orange" />
               </>
             ) : (
               <>
               <img src={data[randomIndex - 2].image.desktop} alt={data[randomIndex-2].name} />
                 <h4>{data[randomIndex - 2].name}</h4>
-                <SeeProductBtn type="orange" />
+                <SeeProductBtn link={`/product/${data[randomIndex - 2].id}`} type="orange" />
               </>
             )}
           </div>
