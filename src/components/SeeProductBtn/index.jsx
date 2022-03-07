@@ -1,6 +1,6 @@
-const SeeProductBtn = ({link, type}) => {
+const SeeProductBtn = ({link, type, title = "See Product"}) => {
   return (
-    <a href={link} className={`product-btn centered product-btn-${type}`}>See Product</a>
+    <a href={link} className={`product-btn centered product-btn-${type}`}>{title}</a>
   )
 }
 
