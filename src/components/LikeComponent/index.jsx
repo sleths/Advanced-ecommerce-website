@@ -14,7 +14,7 @@ const LikeComponent = () => {
         <div className={styles.wrapper}>
           <div className={styles.card}>
             <img src={data[randomIndex].image.desktop} alt={data[randomIndex].name} />
-            <h3>{data[randomIndex].name}</h3>
+            <h4>{data[randomIndex].name}</h4>
             <SeeProductBtn link={`/product/${data[randomIndex].id}`} type="orange" />
           </div>
           <div className={styles.card}>

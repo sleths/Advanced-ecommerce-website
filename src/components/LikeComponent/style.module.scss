@@ -20,11 +20,11 @@
 }
 
 @media (min-width: 768px) {
-  .card img {
-    width: 250px !important;
-  }
   .card {
     justify-content: space-between;
+    & h4{
+      font-size: 1.25rem;
+    }
   }
 
   .wrapper {
