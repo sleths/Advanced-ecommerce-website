@@ -11,6 +11,25 @@
   margin-top: 7rem;
 }
 
+.buttonContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 1em;
+}
+
+.rangeContainer {
+  display: flex;
+  background-color: color.$darkGray;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1em;
+  width: 120px;
+  & p {
+    color: color.$mainBlack;
+  }
+
+}
+
 .text{
   color: color.$sideGray;
 }
